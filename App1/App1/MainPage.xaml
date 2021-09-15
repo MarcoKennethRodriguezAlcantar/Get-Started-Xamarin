@@ -5,21 +5,21 @@
 
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Hola jon No jueges minecraft plox" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <Label Text="¡ Bienvenido a mi App !" VerticalOptions="Start" TextColor="White" FontSize="36"/>
         </Frame>
         <Button Text="Este es un boton" Clicked="Button_Clicked"></Button>
-        <Label Text="Hola jon No jueges minecraft plox" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Hola jon No jueges minecraft plox" FontSize="16" Padding="30,0,30,0"/>
+        <Label Text="Mira como cambia el contador" FontSize="Title" HorizontalTextAlignment="Center"  Padding="30,10,30,10"/>
+        <Label Text="Tambien puedes dar click en 'reset'" HorizontalTextAlignment="Center" FontSize="16" Padding="30,0,30,0"/>
         <Label FontSize="16" Padding="30,24,30,0">
             <Label.FormattedText>
                 <FormattedString>
                     <FormattedString.Spans>
-                        <Span Text="Hola jon No jueges minecraft plox "/>
+                        <Span Text="Texto de span" />
                     </FormattedString.Spans>
                 </FormattedString>
             </Label.FormattedText>
         </Label>
-        <Button Text="Reset" Clicked="Button_Clicked_1"></Button>
+        <Button Text="Reset" Clicked="Button_Clicked_1" BackgroundColor="Aquamarine"></Button>
     </StackLayout>
 
 </ContentPage>

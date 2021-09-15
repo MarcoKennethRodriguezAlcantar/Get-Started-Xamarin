@@ -13,6 +13,7 @@ namespace App1
         int count;
         string mensage;
         Button button1;
+        Random rndm = new Random(); 
         public MainPage()
         {
             InitializeComponent();
@@ -25,10 +26,10 @@ namespace App1
             {
                 button1 = ((Button)sender);
             }
-                
             count++;
-            mensage = "Veces clikeado {0}";
+            mensage = "Numero de veces clikeado: {0}";
             button1.Text = string.Format(mensage,count);
+            button1.BackgroundColor = Color.FromRgb(rndm.Next(256), rndm.Next(256), rndm.Next(256));
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
